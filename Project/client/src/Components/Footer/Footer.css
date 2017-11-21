@@ -1,0 +1,10 @@
+.item {
+    grid-row: 11 / 13 ;
+    grid-column: 1 / 13  ;
+}
+
+.footer{
+    text-align: center;
+    background: green;
+}
+  

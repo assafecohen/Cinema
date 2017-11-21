@@ -1,0 +1,15 @@
+.item {
+    grid-row: 2 / 11 ;
+    grid-column: 4 / 13  ;
+}
+
+.gallery_container{
+    background: yellow;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+  

@@ -1,0 +1,17 @@
+.item {
+    grid-row: 1 ;
+    grid-column: 1 / 13  ;
+}
+
+.Header{
+    text-align: center;
+    background:red;
+}
+
+.title{
+    margin: 0;
+    padding-top:2px;
+}
+
+
+  

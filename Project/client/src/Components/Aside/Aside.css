@@ -1,0 +1,10 @@
+.item {
+    grid-row: 2 / 11 ;
+    grid-column: 1 / 4 ;  ;
+}
+
+.aside{
+    background:blue;
+    text-align: center;
+}
+  
