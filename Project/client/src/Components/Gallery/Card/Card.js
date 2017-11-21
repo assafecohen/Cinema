@@ -3,8 +3,7 @@ import style from './Card.css';
 
 const Card = ({imageUrl}) => {
   return (
-    <div>
-       <h2> Assaf </h2>
+    <div className={style.gallery_item}>
        <img className={style.image} src={imageUrl}/>
     </div>
   );

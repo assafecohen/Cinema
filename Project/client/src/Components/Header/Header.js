@@ -5,7 +5,12 @@ class Header extends Component {
   render() {
     return (
       <div className={`${style.item} ${style.Header}`}>
-           <h1 className={style.title}>New_Project</h1>
+        <ul className={style.nav_container}>
+          <li>Home</li>
+          <li>Comedy</li>
+          <li>Action</li>
+          <li>Login</li>
+        </ul>
       </div>
     );
   }

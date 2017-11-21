@@ -3,9 +3,7 @@
   width: 90vw;
   max-width : 1000px; 
   max-height : 850px; 
-  
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows:  repeat(12, 1fr);
-  grid-gap: 1rem;
   margin: 0 auto;
 }
