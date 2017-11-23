@@ -4,9 +4,12 @@ import style from './Card.css';
 const Card = ({imageUrl}) => {
   return (
     <div className={style.gallery_item}>
-       <img className={style.image} src={imageUrl}/>
+      <div className={style.image}  style = {{backgroundImage: 'url(' + imageUrl + ')'}}/>
     </div>
   );
 };
 
 export default Card;
+
+
+  

@@ -1,10 +1,31 @@
 .image {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .gallery_item{
     width: 22%;
     box-sizing: border-box;
+    margin: 10px auto;
+}
+
+@media (max-width: 980px) {
+    .gallery_item {
+        width: 30%;  
+    }
+}
+
+@media (max-width: 680px) { 
+    .gallery_item {
+        width: 48%;
+    }
+}
+
+@media (max-width: 480px) { 
+    .gallery_item {
+        width: 90%;
+    }
 }
