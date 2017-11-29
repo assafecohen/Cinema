@@ -6,7 +6,7 @@
 }
 
 .gallery_container{
-    background-image: linear-gradient(top, #2C1780 0%, #0E0647 50%, #0B1642 100%);
+    background: linear-gradient(top, #2C1780 0%, #0E0647 50%, #0B1642 100%);
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;

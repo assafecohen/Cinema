@@ -5,6 +5,7 @@
 
 .footer{
     text-align: center;
-    background: green;
+    background: linear-gradient(top, #2C1780 0%, #0E0647 50%, #0B1642 100%);
+    
 }
   

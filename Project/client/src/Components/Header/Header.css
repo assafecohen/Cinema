@@ -7,25 +7,29 @@
 
 .Header{
     text-align: center;
-    background-image: linear-gradient(left, #4D4D4D 0%, #747877 50%, #CCC4C4 100%);
+    background-image: radial-gradient(ellipse farthest-corner at center, #808080 0%, #E0E0E0 100%);
+    font-family: 'Cabin', sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 20px;
 }
 
 .nav_container{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+    justify-content: space-around;
     list-style-type: none;
 }
 
 .nav_container > li{
     transition: .4s ease;
+    margin-right:15px;
 }
 
 .nav_container > li:hover{
     cursor: pointer; 
     color:white;
-    text-decoration: underline;
-    text-decoration-color: #fff;
+    /* text-decoration: underline;
+    text-decoration-color: #fff; */
 }
 
 
