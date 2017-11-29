@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './Card.css';
 
-const Card = ({ imageUrl, movieId, selected, onClick7 }) => {
+const Card = ({ imageUrl, movieId, selected, onClick }) => {
   return (
-    <div className={style.gallery_item} onClick={() => onClick7(movieId)}>
+    <div className={style.gallery_item} onClick={() => onClick(movieId)}>
       <div className={style.image} style={{ backgroundImage: 'url(' + imageUrl + ')' }} />
     </div>
   );

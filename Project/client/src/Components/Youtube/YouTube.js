@@ -1,11 +1,11 @@
 import React from 'react';
 import Video from 'react-youtube';
+import style from './YouTube.css';
 
 class YouTube extends React.Component {
     render() {
+      let {movieId,onClick} = this.props;      
       const opts = {
-        height: '390',
-        width: '640',
         playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 0,
         color: 'white',
@@ -15,14 +15,16 @@ class YouTube extends React.Component {
         //start: 10 // start the movie from 10 ahead         
         }
       };
-      let {movieId} = this.props;
    
       return (
-        <Video
-          videoId={movieId}
-          opts={opts}
-          onReady={this._onReady}
-        />
+        <div className={style.wrapper} onClick={() => onClick()}>
+          <Video
+            className={style.video}
+            videoId={movieId}
+            opts={opts}
+            onReady={this._onReady}
+          />
+        </div>
       );
     }
    

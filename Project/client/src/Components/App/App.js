@@ -10,36 +10,35 @@ class App extends Component {
   constructor() {
     super();
     this.api = new API();
-    this.state = { data: [] ,selectedMovie: false};
+    this.state = { data: [], selectedMovie: false };
     this.handleClickShowVideo = this.handleClickShowVideo.bind(this);
+    this.handleClickHideVideo = this.handleClickHideVideo.bind(this);
   }
 
-   async componentWillMount(){
+  async componentWillMount() {
     let data = await this.api.getData();
-    this.setState( { data } );
+    this.setState({ data });
   }
 
-    handleClickShowVideo(movieId) {
-      this.setState({selectedMovie: movieId});
+  handleClickShowVideo(movieId) {
+    this.setState({ selectedMovie: movieId });
   }
 
-    handleClickHideVideo() {
-      
-    }
-
+  handleClickHideVideo() {
+    this.setState({ selectedMovie: false });
+  }
 
   render() {
-    let {data,selectedMovie} = this.state;
+    let { data, selectedMovie } = this.state;
     return (
       <div className={style.container}>
-          <Header/>
-          <Gallery data={data} onClick7={this.handleClickShowVideo}/>
-         { selectedMovie && <Youtube movieId={selectedMovie }/>}
-          <Footer/>
+        <Header />
+        <Gallery data={data} onClick={this.handleClickShowVideo} />
+        {selectedMovie && <Youtube movieId={selectedMovie} onClick={this.handleClickHideVideo} />}
+        <Footer />
       </div>
     );
   }
 }
 
 export default App;
-
