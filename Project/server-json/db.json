@@ -1,6 +1,6 @@
 {
     "data" : [
-        {"id":1, "title":"Kill Bill Vol. 1", "imageUrl":"https://images-na.ssl-images-amazon.com/images/M/MV5BYTczMGFiOWItMjA3Mi00YTU5LWIwMDgtYTEzNjRkNDkwMTE2XkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg","movieId":"7kSuas6mRpk"},
+        {"id":1, "title":"Kill Bill Vol. 1", "imageUrl":"https://images-na.ssl-images-amazon.com/images/M/MV5BYTczMGFiOW _.jpg","movieId":"7kSuas6mRpk"},
         {"id":2, "title":"Kill Bill Vol. 2", "imageUrl":"https://images-na.ssl-images-amazon.com/images/M/MV5BNmFiYmJmN2QtNWQwMi00MzliLThiOWMtZjQxNGRhZTQ1MjgyXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg","movieId":"WTt8cCIvGYI"},
         {"id":3, "title":"Ghostbusters", "imageUrl":"https://images-na.ssl-images-amazon.com/images/M/MV5BMTkxMjYyNzgwMl5BMl5BanBnXkFtZTgwMTE3MjYyMTE@._V1_SY1000_CR0,0,650,1000_AL_.jpg","movieId":"w3ugHP-yZXw"},
         {"id":4, "title":"Saving Private Ryan", "imageUrl":"http://t2.gstatic.com/images?q=tbn:ANd9GcR0lDhR_dXAKTm9wysp3nWu6kP0V5skJBVbCNC_Q8urAWcr4iF_","movieId":"RYID71hYHzg"},
@@ -8,7 +8,6 @@
         {"id":6, "title":"Amelie",  "imageUrl":"http://is5.mzstatic.com/image/thumb/Video/v4/5d/e2/42/5de24224-2218-2341-0667-12898a6ca7da/source/1200x630bb.jpg","movieId":"HUECWi5pX7o"},
         {"id":7, "title":"The Godfather",  "imageUrl":"https://images-na.ssl-images-amazon.com/images/M/MV5BZTRmNjQ1ZDYtNDgzMy00OGE0LWE4N2YtNTkzNWQ5ZDhlNGJmL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SY1000_CR0,0,704,1000_AL_.jpg","movieId":"7kSuas6mRpk"},
         {"id":8, "title":"E.T", "imageUrl":"https://images-na.ssl-images-amazon.com/images/I/512P9C25YEL._SY445_.jpg","movieId":"7kSuas6mRpk"}
-
     ]
     
 }

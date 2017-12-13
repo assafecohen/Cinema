@@ -4,8 +4,9 @@ export default class API {
   
     async getData() {
       try {
-        let response = await fetch('http://localhost:9000/data');
-        let data = response.json();
+        let response = await fetch('http://localhost:9000/api/movies');
+        let data = await response.json();
+        console.log(data);
         return data;
       } catch (error) {
         console.log(error);
