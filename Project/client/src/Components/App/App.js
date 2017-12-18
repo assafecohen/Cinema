@@ -10,7 +10,8 @@ class App extends Component {
   constructor() {
     super();
     this.api = new API();
-    this.state = { data: [], selectedMovie: false };
+    this.data = [];
+    this.state = { data: [], dataFilter: [], selectedMovie: false };
     this.handleClickShowVideo = this.handleClickShowVideo.bind(this);
     this.handleClickHideVideo = this.handleClickHideVideo.bind(this);
     this.handleClickFilterGallery = this.handleClickFilterGallery.bind(this);
@@ -19,8 +20,9 @@ class App extends Component {
 
   async componentWillMount() {
     console.log("RENDER");
-    let data = await this.api.getData();
-    this.setState({ data });
+    this.data = await this.api.getData();
+    
+    this.setState({ dataFilter:this.data });
   }
 
   handleClickShowVideo(movieId) {
@@ -32,18 +34,19 @@ class App extends Component {
   }
 
   handleClickFilterGallery(type) {
-    console.log(type);
-    let dataFilter = this.state.data.filter(movie => movie.type === type);
-    console.log(dataFilter);
-    this.setState({data: dataFilter});
+    let dataFilter = this.data;
+    if(type!=='showAllMovies'){
+      dataFilter = dataFilter.filter(movie => movie.type === type);
+    }
+    this.setState({dataFilter});
   }
 
   render() {
-    let { data, selectedMovie } = this.state;
+    let { dataFilter, selectedMovie } = this.state;
     return (
       <div className={style.container}>
         <Header onClick={this.handleClickFilterGallery} />
-        <Gallery data={data} onClick={this.handleClickShowVideo} />
+        <Gallery data={dataFilter} onClick={this.handleClickShowVideo} />
         {selectedMovie && <Youtube movieId={selectedMovie} onClick={this.handleClickHideVideo} />}
         <Footer />
       </div>

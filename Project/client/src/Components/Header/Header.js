@@ -8,7 +8,7 @@ class Header extends Component {
     return (
       <div className={`${style.item} ${style.Header}`}>
         <ul className={style.nav_container}>
-          <li>Home</li>
+          <li onClick={() => onClick('showAllMovies')}>Home</li>
           <li onClick={() => onClick('comedy')}>Comedy</li>
           <li onClick={() => onClick('action')}>Action</li>
           <li>Login</li>
