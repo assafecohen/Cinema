@@ -5,7 +5,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
-    transition: 0.6s;
+    transition: 0.2s;
 }
 .image:hover {
     filter: drop-shadow(0px 0px 8px rgba(0, 231, 255, 0.8));
@@ -18,22 +18,16 @@
     margin: 10px auto;
 }
 
-/* @media (max-width: 980px) {
-    .gallery_item {
-        width: 33%;  
-    }
-} */
-
 @media (max-width: 680px) { 
     .gallery_item {
-        height: 280px;
+        height: 260px;
         width: 40%;
     }
 }
 
 @media (max-width: 480px) { 
     .gallery_item {
-        height: 280px;
-        width: 55%
+        height: 260px;
+        width: 51%
     }
 }

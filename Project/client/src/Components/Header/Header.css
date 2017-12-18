@@ -28,13 +28,13 @@
 .nav_container > li:hover{
     cursor: pointer; 
     color:white;
-    /* text-decoration: underline;
-    text-decoration-color: #fff; */
+
 }
 
 
 @media (max-width: 480px) {
     .nav_container{
+        padding:0;
         flex-direction: column;
     }
     .nav_container > li{
