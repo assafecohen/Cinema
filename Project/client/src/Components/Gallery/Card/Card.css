@@ -17,7 +17,10 @@
     box-sizing: border-box;
     margin: 10px auto;
 }
-
+.title{
+    color: #ffffff;
+    text-align: center;
+}
 @media (max-width: 680px) { 
     .gallery_item {
         height: 260px;
